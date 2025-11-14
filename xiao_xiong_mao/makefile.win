@@ -13,10 +13,10 @@ CXXFLAGS = $(CXXINCS) "-g3" "-pipe" "-Wall" "-D_DEBUG"
 CFLAGS   = $(INCS) "-g3" "-pipe" "-Wall" "-D_DEBUG"
 WINDRESFLAGS = 
 RES      = xiao_xiong_mao_private.res
-OBJ      = main.o $(RES)
+OBJ      = 猜数字游戏.o $(RES)
 BIN      = xiao_xiong_mao.exe
-LINKOBJ  = "main.o" "xiao_xiong_mao_private.res"
-CLEANOBJ = "main.o" "xiao_xiong_mao_private.res" "xiao_xiong_mao.exe"
+LINKOBJ  = "猜数字游戏.o" "xiao_xiong_mao_private.res"
+CLEANOBJ = "猜数字游戏.o" "xiao_xiong_mao_private.res" "xiao_xiong_mao.exe"
 
 .PHONY: all all-before all-after clean clean-custom
 
@@ -29,8 +29,8 @@ xiao_xiong_mao.exe: $(OBJ)
 
 	$(CC) $(LINKOBJ) -o "xiao_xiong_mao.exe" $(LIBS)
 
-main.o: main.c
-	$(CC) -c "main.c" -o "main.o" $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+猜数字游戏.o: 猜数字游戏.c
+	$(CC) -c "猜数字游戏.c" -o "猜数字游戏.o" $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
 
 xiao_xiong_mao_private.res: xiao_xiong_mao_private.rc 
 	$(WINDRES) -i "xiao_xiong_mao_private.rc" --input-format=rc -o "xiao_xiong_mao_private.res" -O coff $(WINDRESFLAGS) 
