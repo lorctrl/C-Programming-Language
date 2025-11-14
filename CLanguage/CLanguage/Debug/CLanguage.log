@@ -1,2 +1,2 @@
-﻿  Hello.c
-  CLanguage.vcxproj -> C:\GitCode\C-Programming-Language\CLanguage\Debug\CLanguage.exe
+﻿源.obj : error LNK2005: _main 已经在 Hello.obj 中定义
+C:\GitCode\C-Programming-Language\CLanguage\Debug\CLanguage.exe : fatal error LNK1169: 找到一个或多个多重定义的符号
