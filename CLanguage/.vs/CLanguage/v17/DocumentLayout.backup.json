@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\GitCode\\C-Programming-Language\\CLanguage\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D9402DC3-FF8D-4ADA-9277-72447BE72AE0}|CLanguage\\CLanguage.vcxproj|C:\\GitCode\\C-Programming-Language\\CLanguage\\CLanguage\\Hello.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D9402DC3-FF8D-4ADA-9277-72447BE72AE0}|CLanguage\\CLanguage.vcxproj|solutionrelative:CLanguage\\Hello.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Hello.c",
+              "DocumentMoniker": "C:\\GitCode\\C-Programming-Language\\CLanguage\\CLanguage\\Hello.c",
+              "RelativeDocumentMoniker": "CLanguage\\Hello.c",
+              "ToolTip": "C:\\GitCode\\C-Programming-Language\\CLanguage\\CLanguage\\Hello.c",
+              "RelativeToolTip": "CLanguage\\Hello.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-11-16T08:20:51.065Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
