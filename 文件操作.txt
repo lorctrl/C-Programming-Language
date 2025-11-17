@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+
+int main() {
+    FILE* fp1, * fp2;
+    char str[10];
+
+    if ((fp1 = fopen("file.txt", "w")) == NULL)
+    {
+        printf("不能创建文件\n");
+        exit(0);
+    }
+
+    printf("输入字符串（空行结束）：\n");
+    fgets(str, sizeof(str), stdin);  // 使用更安全的fgets
+
+    // 去除fgets读取的换行符
+    str[strcspn(str, "\n")] = 0;
+
+    while (strlen(str) > 0)
+    {
+        fputs(str, fp1);
+        fputs("\n", fp1);
+        fgets(str, sizeof(str), stdin);
+        str[strcspn(str, "\n")] = 0;
+    }
+    fclose(fp1);
+
+    if ((fp2 = fopen("file.txt", "r")) == NULL)
+    {
+        printf("不能打开文件\n");
+        exit(0);
+    }
+
+    printf("输出字符串为：\n");
+    while (fgets(str, sizeof(str), fp2) != NULL)
+    {
+        printf("%s", str);
+    }
+    fclose(fp2);
+
+    return 0;
+}

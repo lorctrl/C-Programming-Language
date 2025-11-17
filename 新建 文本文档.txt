@@ -1,0 +1,2 @@
+windows下 使用简易命令编辑Hosts文件
+https://www.cnblogs.com/damonlog/p/18970129
